@@ -51,7 +51,7 @@ export const deleteActor = async ({
 
 export const editActor = async (payload: editActorType) => {
   const id = Number(payload?.id);
-  if (payload?.image) {
+  if (payload?.image !== null) {
     const ifImg = payload.current_image.length > 0 ? true : false;
     const imagePath = payload.current_image.replace("movies/", "");
 

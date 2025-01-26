@@ -36,7 +36,7 @@ const UpdateActor: React.FC<{ initialValues: actorType }> = ({
 
     const payload = {
       ...values,
-      current_image: String(values.image),
+      current_image: String(initialValues.image),
       image: image,
       born: String(birthDay),
       id: initialValues.id,
@@ -103,7 +103,7 @@ const UpdateActor: React.FC<{ initialValues: actorType }> = ({
             onChange={handleChange}
           >
             {!isUploaded && (
-              <Button type="primary" className="my-4">
+              <Button className="my-4">
                 <UploadOutlined />
                 Click to Change Photo
               </Button>

@@ -2,6 +2,7 @@ import { Button, Form, Input, Upload } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { useNavigate } from "react-router-dom";
 import { useAddNews } from "@/react-query/mutation/news";
+import { UploadOutlined } from "@ant-design/icons";
 // import { Database } from "@/supabase/supabase.types";
 import { useState } from "react";
 
@@ -55,7 +56,8 @@ const CreateNews = () => {
           onChange={handleChange}
         >
           {!isUploaded && (
-            <Button className="bg-primary hover:bg-primary my-4">
+            <Button className="my-4">
+              <UploadOutlined />
               Click to Upload Photo
             </Button>
           )}

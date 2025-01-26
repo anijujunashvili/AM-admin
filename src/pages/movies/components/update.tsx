@@ -191,12 +191,7 @@ const UpdateMovie: React.FC<{ initialValues: movieType }> = ({
         </Item>
 
         <Item label={null} className="w-full">
-          <Button
-            type="primary"
-            disabled={isUploaded}
-            htmlType="submit"
-            className=""
-          >
+          <Button type="primary" htmlType="submit" className="">
             Edit
           </Button>
         </Item>

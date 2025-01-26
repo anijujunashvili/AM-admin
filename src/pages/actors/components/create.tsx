@@ -1,5 +1,6 @@
 import { Button, Form, Input, Upload } from "antd";
 import { useForm } from "antd/es/form/Form";
+import { UploadOutlined } from "@ant-design/icons";
 import type { DatePickerProps } from "antd";
 import { DatePicker } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -79,7 +80,8 @@ const CreateActor = () => {
             onChange={handleChange}
           >
             {!isUploaded && (
-              <Button className="my-4 bg-primary hover:bg-primary">
+              <Button className="my-4">
+                <UploadOutlined />
                 Click to Upload Photo
               </Button>
             )}
